@@ -1,110 +1,237 @@
+body
+{
+	font-size: 100%; /*16px*/
+	font-family: 'Rufina', serif;
+}
 
-.popup-on
+/* header*/
+.header
+{
+
+}
+
+.logo
+{
+	display: block;
+}
+
+.logo img
+{
+	display: block;
+	margin: 30px auto;
+	filter: grayscale(100%);
+}
+
+.logo img:hover
+{
+	filter: grayscale(0);
+	transition: all 0.5s ease;
+}
+
+.navigation ul
+{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+}
+
+.navigation ul li
 {
 	display: inline-block;
-	background: #f1f1f1;
-	color: black;
-	padding: 20px 25px;
-	border: 1px solid black;
-	border-radius: 5px;
 }
 
-.popup-on:hover
+.navigation ul li a
 {
-	background: #939393;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1em;
+	padding: 0 15px;
+	color: #a19785;
+	transition: color 0.5s ease;
+}
+
+.navigation ul li a:hover
+{
+	color: #474241;
+	border-bottom: 2px solid #a19785;
+}
+
+.line-shadow img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.wrap-category
+{
+	margin: 50px 0;
+}
+
+.category--link
+{
+	display: inline-block; 
+	font-size: 1em;
+	text-decoration: none;
+	padding: 0 10px;
+	color: #474241;
+	transition: all 0.3s ease;
+}
+
+.cat-active, .category--link:hover
+{
 	color: white;
-	cursor: pointer;
+	background: #a19785;
 }
 
-.popup-logic
+.gallery-item
 {
-	display: none;
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	padding-bottom: 35px;
 }
-/*
-.popup
+
+.gallery-item img
 {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 5;
-	width: 100%;
+	display: block;
+	max-width: 100%;
 	height: 100%;
-	opacity: 0;
+	object-fit: cover;
+	filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+
+.gallery-item:hover img
+{
+	filter: grayscale(0%);
+}
+
+.top-footer
+{
+	background: #605a58;
+	padding-top: 35px;
+}
+
+.big-logo
+{
+	display: inline-block;
+}
+
+.soc-info
+{
+	padding-left: 20px;
+}
+.soc-info h1
+{
+	font-size: 1.75em;
+	color: white;
+	-webkit-margin-before: 0;
+	/*-webkit-margin-after: 0;*/
+}
+
+.location span
+{
+	color: #b5b3b2;
+	font-size: 1em;
+	margin-left: 10px;
+}
+
+.soc-icons ul
+{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+}
+
+.soc-icons ul li
+{
+	display: inline-block;
+}
+
+.soc-icons ul li a
+{
+	width: 37px;
+	height: 37px;
+	background: url("../image/Social.png");
 	display: block;
+	margin: 0 3px;
+	transition: all 0.5s ease;
 }
 
-.popup:before
+.soc-icons .fb
 {
-	content: " ";
-	position: absolute;
-	display: block;
-	background: rgba(0,0,0,0.4);
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	background-position: 0 0;
 }
 
-.popup-logic:checked + .popup
+.soc-icons .in
 {
-	opacity: 1;
-	display: block;
+	background-position: -53px 0;
 }
 
-.popup-content
+.soc-icons .bh
 {
-	width: 350px;
-	height: 350px;
-	position: absolute;
-	z-index: 2; 
-	margin: 250px auto;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	border: 1px solid black;
-	padding: 15px;
-	box-sizing: border-box;
-	background: white;
-}
-*/
-.popup2-wrapper
-{
-	position: absolute;
-	display: none;
-	background: rgba(0,0,0,0.4);
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	background-position: -105px 0;
 }
 
-.popup2-content
+.soc-icons .five8
 {
-	width: 350px;
-	height: 350px;
-	position: absolute;
-	z-index: 2; 
-	margin: 200px auto;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	border: 1px solid black;
-	padding: 15px;
-	box-sizing: border-box;
-	background: white;
+	background-position: -157px 0;
 }
 
-#popup2-on:target
+.soc-icons .inst
 {
-	display: block;
+	background-position: -209px 0;
+}
+
+.soc-icons .fb:hover
+{
+	background-position: 0 -38px;
+}
+
+.soc-icons .in:hover
+{
+	background-position: -53px -38px;
+}
+
+.soc-icons .bh:hover
+{
+	background-position: -105px -38px;
+}
+
+.soc-icons .five8:hover
+{
+	background-position: -157px -38px;
+}
+
+.soc-icons .inst:hover
+{
+	background-position: -209px -38px;
+}
+
+.footer-text
+{
+	color: #d2d0d0;
+}
+
+.skills h2
+{
+	color: white;
+
+}
+
+.skills img
+{
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.bottom-footer
+{
+	background: #474241;
+}
+
+.bottom-footer .navigation ul li a:hover
+{
+	color: #f79440;
+	border-bottom: 2px solid #f79440;
 }
